@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Student Inquiry</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="request.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="request.html" class="active">New Student</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-section">
+    <h1>New Student Inquiry</h1>
+    <p class="form-intro">We’re excited to hear from you! Fill out the form below and Halina will be in touch soon.</p>
+    <form action="/submit-inquiry" method="POST" class="inquiry-form">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required />
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Inquiry Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>📍 Richmond, VA | ✉️ halina.chukovich.piano@gmail.com</p>
+    <p>&copy; 2025 Chukovich School of Piano</p>
+  </footer>
+
+</body>
+</html>
